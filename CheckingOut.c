@@ -5,20 +5,17 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+char guests[65][6];
+char BookingIDcheck[32];
+char BookingID[32][6];
+int guestsnum[13][6];
+int roomcost;
+int boardtype;
+int boardcost;
+int age;
+int totalcost;
 int main(void) {
-    char guests[65][6];
-    char BookingIDcheck[32];
-    char BookingID[32][6];
-    int guestsnum[13][6] = {122290};
-    int roomcost;
-    int boardtype;
-    int boardcost;
-    int age;
-    int totalcost;
-//testing
-    printf("booking id");
-    gets(BookingID);
-    printf("board type");
+int p = guestsnum[10];
 //checking booking id
     while (1) {
         printf("oh you want to check out? that's cool\nWhat is your booking id?");
@@ -40,18 +37,16 @@ int main(void) {
     else if (strcmp(guests[60],"b") == 0) {
         boardtype = 5;
     }
-    int u16 = guestsnum[8][0] * boardtype/2;
-    int adult = guestsnum[7][0] * boardtype;
+    int u16 = guestsnum[8][p] * boardtype/2;
+    int adult = guestsnum[7][p] * boardtype;
 
     boardcost = adult + u16;
 //calculating age
     for(int i = 0; i < guestsnum[7][i] + guestsnum[8][i] ; i++) {
         int year = guestsnum[4][i] * 10 + guestsnum[5][i];
         if (year < 100){
-            year += (year > 50) ? 1900 : 2000;
-        }
-        age = 2024 - year;
-    }
+            age = 124 - year;
+        }}
 //printing costs
 
     puts(guests);
@@ -60,7 +55,7 @@ int main(void) {
         printf("Under-16s cost: %d\n",u16);
     }
     printf("Board cost: %d\n",boardcost);
-    roomcost = guestsnum[8][0] * guestsnum[10][0];
+    roomcost = guestsnum[8][p] * guestsnum[10][p];
     if(age >65) {
         roomcost = roomcost * 0.9;
         printf("Room cost: %d\n", roomcost);}

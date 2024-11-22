@@ -1,0 +1,3 @@
+"C:\Program Files (x86)\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\CheckOut.dir/objects.a
+C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\CheckOut.dir/objects.a @CMakeFiles\CheckOut.dir\objects1.rsp
+C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\CheckOut.dir/objects.a -Wl,--no-whole-archive -o CheckOut.exe -Wl,--out-implib,libCheckOut.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CheckOut.dir\linkLibs.rsp
